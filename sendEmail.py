@@ -7,8 +7,8 @@ def sendEmail(message):
     sends email with given user and password using smtp. takes message as string or
     html in docstring
     """
-    sender = 'kylesung8161@gmail.com'
-    receivers = ['ks19@williams.edu', 'bsung1@babson.edu']
+    sender = '********@gmail.com'
+    receivers = ['********', '********']
     body_of_email = message
 
     msg = MIMEText(body_of_email, 'html')
@@ -17,6 +17,6 @@ def sendEmail(message):
     msg['To'] = ','.join(receivers)
 
     s = smtplib.SMTP_SSL(host = 'smtp.gmail.com', port = 465)
-    s.login(user = 'kylesung8161', password = 'Live8161')
+    s.login(user = '***********', password = '*********')
     s.sendmail(sender, receivers, msg.as_string())
     s.quit()
