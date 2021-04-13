@@ -182,11 +182,11 @@ def main():
 
 if __name__ == "__main__":
     # send everyday at certain time
-    #schedule.every().day.at("22:30").do(main)
-    """
+    schedule.every().day.at("22:30").do(main)
+    
     while True:
         schedule.run_pending()
-        time.sleep(1)"""
+        time.sleep(1)
 
-    main()
+    #main()
     #searchShoe("https://stockx.com/adidas-zx-8500-overkill-graffiti")
